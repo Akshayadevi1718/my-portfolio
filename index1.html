@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshaya Devi T - Portfolio Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f8fafc; /* Clean, bright slate background */
+            color: #1e293b;
+        }
+        
+        /* Premium Navy Blue & Slate Header */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: white;
+            padding: 60px 0;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.25);
+        }
+
+        /* High Contrast Golden Accent Styling */
+        .text-accent {
+            color: #f59e0b !important; /* Bright technical gold-orange for intense contrast */
+        }
+
+        /* Navigation Styling */
+        .navbar-custom {
+            background-color: #090d16; /* Ultra-deep navy-black navbar */
+            border-bottom: 2px solid #f59e0b;
+        }
+        .navbar-custom .nav-link.active {
+            color: #f59e0b !important;
+            font-weight: 600;
+        }
+
+        /* Profile Image Frame with Gold Highlight Border */
+        .profile-img-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px auto;
+            border: 4px solid #f59e0b;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+        }
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Custom Interactive Links for Footer Navigation */
+        .btn-navy-outline {
+            color: #1e3a8a;
+            border: 2px solid #1e3a8a;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn-navy-outline:hover {
+            background-color: #1e3a8a;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-accent" href="index.html">My Student Space</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index1.html">About</a>
+                <a class="nav-link" href="certifications.html">Certifications</a>
+                <a class="nav-link" href="project.html">Next Project</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center">
+        <div class="container">
+            <div class="profile-img-container">
+                <img src="C:\Users\Akshayadevi\OneDrive\Pictures\Screenshots\profile.jpeg" class="profile-img" alt="Akshaya Devi T Profile Image">
+            </div>
+            
+            <h1 class="display-4 fw-bold text-white mb-2">Hi, I'm <span class="text-accent">AKSHAYA DEVI T</span></h1>
+            <p class="lead fw-medium text-light opacity-90">Student | Tech Learner | Frontend Enthusiast | Athlete</p>
+            <p class="small text-white-50">Building foundations with HTML, CSS, Bootstrap, JavaScript, and Cybersecurity.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        
+        <section id="about" class="bg-white p-5 rounded shadow-sm border-0">
+            <h2 class="fw-bold mb-4" style="color: #0f172a;">
+                <i class="fa-solid fa-user me-2 text-accent"></i>About Me
+            </h2>
+            <p class="text-secondary fs-5 leading-relaxed">
+                I am an ambitious student specializing in modern web development frameworks, data analysis systems, and comprehensive cybersecurity architectures. 
+                I systematically built this multi-page portfolio infrastructure from scratch using clean structural HTML and optimized Bootstrap compilation layout engines to securely document my professional educational milestone telemetry.
+            </p>
+            <div class="mt-4">
+                <a href="certifications.html" class="btn btn-navy-outline rounded-pill px-4 me-2">View My Credentials</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom" style="background-color: #090d16 !important;">
+        <p class="mb-0 small">&copy; 2026 AKSHAYA DEVI T. Student Portfolio.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

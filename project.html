@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshaya Devi T - Experience & Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f8fafc; 
+            padding-bottom: 90px; 
+            color: #1e293b;
+        }
+        
+        /* Navigation Styling */
+        .navbar-custom {
+            background-color: #090d16;
+            border-bottom: 2px solid #f59e0b;
+        }
+        .navbar-custom .nav-link.active {
+            color: #f59e0b !important;
+            font-weight: 600;
+        }
+        .text-accent {
+            color: #f59e0b !important;
+        }
+
+        /* Premium Dark Navy Cards for Internships */
+        .navy-card { 
+            border: none; 
+            background: #0f172a; 
+            padding: 30px; 
+            border-radius: 16px; 
+            margin-bottom: 24px; 
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+            transition: transform 0.3s ease;
+            color: white;
+        }
+        .navy-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Touch / Interactive Links for Offer Letters */
+        .offer-link { 
+            color: #f8fafc; 
+            cursor: pointer; 
+            text-decoration: none;
+            font-weight: 500; 
+            display: inline-block;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+        .offer-link:hover { 
+            color: #090d16; 
+            background-color: #f59e0b;
+        }
+
+        /* VORA High Contrast Featured Section Block */
+        .vora-block {
+            border: 2px solid #f59e0b;
+            background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1);
+        }
+        
+        /* Golden Action Button for Canva Link */
+        .btn-gold {
+            background-color: #f59e0b;
+            color: #090d16;
+            font-weight: 700;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.2s ease;
+        }
+        .btn-gold:hover {
+            background-color: #d97706;
+            color: white;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
+
+        /* Modal Borders */
+        .modal-content {
+            border: 3px solid #f59e0b;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .modal-header-navy {
+            background-color: #0f172a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-accent" href="index.html">My Student Space</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index1.html">About</a>
+                <a class="nav-link" href="certifications.html">Certifications</a>
+                <a class="nav-link active" href="project.html">Next Project</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        
+        <section id="internships" class="mb-5">
+            <h2 class="fw-bold mb-4" style="color: #0f172a;">
+                <i class="fa-solid fa-briefcase me-2 text-accent"></i>Professional Internships
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="navy-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="fw-bold m-0 text-white">InternEzy</h4>
+                            <span class="badge bg-warning text-dark px-3 py-1 fw-bold">Full Stack</span>
+                        </div>
+                        <p class="text-secondary-50 small mb-4 opacity-75">Gained core web development experience, focusing on building responsive modules, component lifecycles, and front-to-back connectivity configurations.</p>
+                        <span class="offer-link" data-bs-toggle="modal" data-bs-target="#internezyModal">
+                            <i class="fa-solid fa-file-signature me-2"></i>Touch to View Offer Letter
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="navy-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="fw-bold m-0 text-white">Internshala Platform</h4>
+                            <span class="badge bg-info text-dark px-3 py-1 fw-bold">AI Web Dev</span>
+                        </div>
+                        <p class="text-secondary-50 small mb-4 opacity-75">Secured an AI Web Development role at InAmigos Foundation via the Internshala portal, implementing smart automated system components.</p>
+                        <span class="offer-link" data-bs-toggle="modal" data-bs-target="#internshalaModal">
+                            <i class="fa-solid fa-certificate me-2"></i>Touch to View Selection Certificate
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-showcase" class="my-5">
+            <div class="vora-block p-5 text-center">
+                <span class="badge bg-dark text-accent px-4 py-2 mb-3 fw-bold tracking-wider">FEATURED REVOLUTION</span>
+                <h2 class="display-5 fw-bold mb-1" style="color: #0f172a;">Project VORA</h2>
+                <p class="lead fw-medium text-muted mb-4">Voice Optimized Resource Analyzer</p>
+                
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-8">
+                        <p class="text-secondary fs-5">
+                            VORA bridges complex software architectures directly with industrial agricultural machines. 
+                            By integrating custom voice-optimization telemetry into hardware, this system allows farmers to intuitively command, analyze, and automate resource levels instantly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="C:\Users\Akshayadevi\Downloads\Copy of & Farming (1).pdf"" target="_blank" class="btn btn-gold btn-lg px-5 shadow-sm">
+                        <i class="fa-solid fa-file-powerpoint me-2"></i>VORA(Voice Optimized Resource Analyzer)
+                    </a>
+                </div>
+               
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="internezyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modal-header-navy">
+                    <h5 class="modal-title fw-bold"><span class="text-accent">InternEzy</span> -web development Internship </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center bg-white p-2">
+                    <img src="C:\Users\Akshayadevi\Downloads\WhatsApp Image 2026-06-06 at 11.44.25 PM.jpeg" class="img-fluid rounded" alt="InternEzy Offer Letter">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="internshalaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modal-header-navy">
+                    <h5 class="modal-title fw-bold"><span class="text-accent">Web Development Internship</span> - in Coordination with Internshaala</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center bg-white p-2">
+                    <img src="C:\Users\Akshayadevi\Downloads\WhatsApp Image 2026-06-06 at 11.45.31 PM.jpeg" class="img-fluid thumbnail" alt="Internshala Selection Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom" style="background-color: #090d16 !important;">
+        <p class="mb-0 small">&copy; 2026 AKSHAYA DEVI T. Student Portfolio.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
